@@ -300,9 +300,9 @@ class A11yAssertions {
         var elementMessage = "."
         if let element1 = element1 {
             if let element2 = element2 {
-                elementMessage = ": \(element1.description), \(element2.description)."
+                elementMessage = ": \(element1.description) - \(element1.underlyingElement), \(element2.description) - \(element2.underlyingElement)."
             } else {
-                elementMessage = ": \(element1.description)."
+                elementMessage = ": \(element1.description) - \(element1.underlyingElement)."
             }
         }
 
